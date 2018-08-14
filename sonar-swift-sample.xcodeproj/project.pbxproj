@@ -12,10 +12,11 @@
 		E1112AE62121B36F002C9269 /* CalculateView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1112AE42121B36F002C9269 /* CalculateView.storyboard */; };
 		E1112AE82121B372002C9269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1112AE72121B372002C9269 /* Assets.xcassets */; };
 		E1112AEB2121B372002C9269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1112AE92121B372002C9269 /* LaunchScreen.storyboard */; };
-		E1112AF62121B372002C9269 /* CalculateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1112AF52121B372002C9269 /* CalculateTests.swift */; };
+		E1112AF62121B372002C9269 /* CalculatePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1112AF52121B372002C9269 /* CalculatePresenterTests.swift */; };
 		E1112B072121B549002C9269 /* CalculatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1112B062121B549002C9269 /* CalculatePresenter.swift */; };
 		E1112B092121B573002C9269 /* CalculateViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1112B082121B573002C9269 /* CalculateViewProtocol.swift */; };
 		E1112B0B2121B5AD002C9269 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1112B0A2121B5AD002C9269 /* Operation.swift */; };
+		E17E4951212344B00048FD63 /* CalculateViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17E4950212344B00048FD63 /* CalculateViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +38,12 @@
 		E1112AEA2121B372002C9269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1112AEC2121B372002C9269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1112AF12121B372002C9269 /* sonar-swift-sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sonar-swift-sampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1112AF52121B372002C9269 /* CalculateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTests.swift; sourceTree = "<group>"; };
+		E1112AF52121B372002C9269 /* CalculatePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePresenterTests.swift; sourceTree = "<group>"; };
 		E1112AF72121B372002C9269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1112B062121B549002C9269 /* CalculatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePresenter.swift; sourceTree = "<group>"; };
 		E1112B082121B573002C9269 /* CalculateViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewProtocol.swift; sourceTree = "<group>"; };
 		E1112B0A2121B5AD002C9269 /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		E17E4950212344B00048FD63 /* CalculateViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,7 @@
 		E1112AF42121B372002C9269 /* sonar-swift-sampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				E1112AF52121B372002C9269 /* CalculateTests.swift */,
+				E17E494D212344610048FD63 /* Calculate */,
 				E1112AF72121B372002C9269 /* Info.plist */,
 			);
 			path = "sonar-swift-sampleTests";
@@ -151,6 +153,31 @@
 				E1112AE02121B36F002C9269 /* AppDelegate.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E17E494D212344610048FD63 /* Calculate */ = {
+			isa = PBXGroup;
+			children = (
+				E17E494F2123447D0048FD63 /* Presenter */,
+				E17E494E212344690048FD63 /* View */,
+			);
+			path = Calculate;
+			sourceTree = "<group>";
+		};
+		E17E494E212344690048FD63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E17E4950212344B00048FD63 /* CalculateViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E17E494F2123447D0048FD63 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E1112AF52121B372002C9269 /* CalculatePresenterTests.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1112AF62121B372002C9269 /* CalculateTests.swift in Sources */,
+				E1112AF62121B372002C9269 /* CalculatePresenterTests.swift in Sources */,
+				E17E4951212344B00048FD63 /* CalculateViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,9 +27,8 @@ extension CalculatePresenter {
         return Operation(value1: firstValue, value2: secondValue)
     }
 
-    func calculate(operation: Operation?, testing: Bool? = false) {
-        guard let operation = operation else { return }
-        guard testing == false else { return }
+    func calculate(operation: Operation?, testing: Bool) {
+        guard let operation = operation, testing == false else { return }
         self.view.show(calculationResult: String(operation.value1 * operation.value2))
     }
 }
@@ -38,7 +37,7 @@ extension CalculatePresenter {
 
 extension CalculatePresenter {
 
-    func calculateViewTapped(firstValue: String?, secondValue: String?) {
-        self.calculate(operation: self.tryGenerateOperation(firstValue: firstValue, secondValue: secondValue))
+    func calculateViewTapped(firstValue: String?, secondValue: String?, testing: Bool? = false) {
+        self.calculate(operation: self.tryGenerateOperation(firstValue: firstValue, secondValue: secondValue), testing: testing ?? false)
     }
 }

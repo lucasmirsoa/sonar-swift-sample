@@ -416,6 +416,10 @@ else
     fi
 fi
 
+rm -rf build/
+rm -rf sonar-reports/
+rm -rf .scannerwork
+
 # Kill progress indicator
 stopProgress
 
