@@ -24,10 +24,11 @@ class CalculateViewController: UIViewController {
 }
 
 // MARK: - Private methods
+// Should be, but for test purposes I leave that public
 
 extension CalculateViewController {
 
-    @IBAction private func calculateTapped(_ sender: UIButton) {
+    @IBAction func calculateTapped(_ sender: UIButton) {
         self.presenter.calculateViewTapped(firstValue: self.firstTextField.text, secondValue: self.secondTextField.text)
     }
 }
