@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bXi-h6-amL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calculate View Controller-->
+        <scene sceneID="7Fh-4X-oWp">
+            <objects>
+                <viewController storyboardIdentifier="CalculateView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bXi-h6-amL" customClass="CalculateViewController" customModule="sonar_swift_sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eh1-kb-LPW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jBj-Yh-cfk">
+                                <rect key="frame" x="40" y="248.5" width="295" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HJU-6w-cXt">
+                                        <rect key="frame" x="0.0" y="0.0" width="134" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOj-Fe-yPU">
+                                        <rect key="frame" x="144" y="0.0" width="7.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="faA-Lt-zof">
+                                        <rect key="frame" x="161.5" y="0.0" width="133.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HJU-6w-cXt" firstAttribute="width" secondItem="faA-Lt-zof" secondAttribute="width" id="Owq-bN-Z9T"/>
+                                    <constraint firstItem="HJU-6w-cXt" firstAttribute="height" secondItem="faA-Lt-zof" secondAttribute="height" id="vJZ-ff-Y3t"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abf-6j-KPn">
+                                <rect key="frame" x="159.5" y="288.5" width="56" height="30"/>
+                                <state key="normal" title="Calcular"/>
+                                <connections>
+                                    <action selector="calculateTapped:" destination="bXi-h6-amL" eventType="touchUpInside" id="4H0-bC-Qh6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESULTADO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCJ-hl-RvM">
+                                <rect key="frame" x="140" y="333.5" width="95.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JCJ-hl-RvM" firstAttribute="centerY" secondItem="tfh-zJ-Ae5" secondAttribute="centerY" id="AT8-RJ-ygP"/>
+                            <constraint firstItem="jBj-Yh-cfk" firstAttribute="centerY" secondItem="tfh-zJ-Ae5" secondAttribute="centerY" constant="-80" id="FQh-sE-Jww"/>
+                            <constraint firstItem="JCJ-hl-RvM" firstAttribute="centerX" secondItem="tfh-zJ-Ae5" secondAttribute="centerX" id="IGb-UP-VQr"/>
+                            <constraint firstItem="tfh-zJ-Ae5" firstAttribute="trailing" secondItem="jBj-Yh-cfk" secondAttribute="trailing" constant="40" id="OaX-ft-2RV"/>
+                            <constraint firstItem="Abf-6j-KPn" firstAttribute="centerX" secondItem="tfh-zJ-Ae5" secondAttribute="centerX" id="VZz-U9-v2L"/>
+                            <constraint firstItem="jBj-Yh-cfk" firstAttribute="leading" secondItem="tfh-zJ-Ae5" secondAttribute="leading" constant="40" id="WvX-cg-BLC"/>
+                            <constraint firstItem="Abf-6j-KPn" firstAttribute="top" secondItem="jBj-Yh-cfk" secondAttribute="bottom" constant="10" id="vda-v9-zK9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tfh-zJ-Ae5"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstTextField" destination="HJU-6w-cXt" id="3ig-Az-f6g"/>
+                        <outlet property="resultLabel" destination="JCJ-hl-RvM" id="FXF-QU-HOt"/>
+                        <outlet property="secondTextField" destination="faA-Lt-zof" id="GAe-uI-TNS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8r3-fg-gdb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87" y="58"/>
+        </scene>
+    </scenes>
+</document>
