@@ -45,7 +45,7 @@ A solução contempla a utilização das seguintes ferramentas, jenkins e sonarq
   * Logo após a instalação do plugin restart o sonarqube e após isto selecione:
   ![alt text](https://i.imgur.com/r12j0my.png)
   * Busque este `Quality Profile` para validar se foi instalado corretamente no sonarqube
-  ![alt text](https://i.imgur.com/CdJF2uC.png)
+  ![alt text](https://i.imgur.com/ymh28UF.png)
 
 5. Para prosseguir é necessário que você inicie o projeto iOS, vá em `edit scheme`, na opção `Test` entre em `Options`, selecione `Gather coverage for` e marque `all targets`.
 
@@ -64,7 +64,7 @@ Bom, depois de tudo isso, abra o terminal, vá para o diretorio raiz do seu proj
 > Confere no sonarqube, lembrando que é <b>localhost:9000</b>
 > `admin:admin` normalmente é o acesso padrão inicial
 
-![alt text](https://i.imgur.com/I2BAi9T.png)
+![alt text](https://i.imgur.com/dyrFAZh.png)
 
 > Apareceu o projeto lá como na imagem acima? Show, agora podemos ir para o Jenkins.
 
