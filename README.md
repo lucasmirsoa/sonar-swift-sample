@@ -2,7 +2,8 @@
 
 ### Objetivo
 
-Automatizar testes e levantar estatísticas de um projeto desenvolvido em Swift.
+Automatizar testes e levantar estatísticas de um projeto desenvolvido em Swift. 
+Ficando assim Jenkins como responsável por verificar novos commits nas branchs escolhidas e após rotina de build, testes e relatórios, reportar para o sonarqube.
 
 ### Quais ferramentas foram utilizadas?
 
