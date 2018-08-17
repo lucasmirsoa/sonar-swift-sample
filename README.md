@@ -7,7 +7,9 @@ Ficando assim Jenkins como responsável por verificar novos commits nas branchs 
 
 ### Quais ferramentas foram utilizadas?
 
-A solução contempla a utilização das seguintes ferramentas, jenkins e sonarqube.
+A solução contempla a utilização das seguintes ferramentas:
+* Jenkins 
+* Sonarqube
 
 ### Iniciando a integração da solução
 
